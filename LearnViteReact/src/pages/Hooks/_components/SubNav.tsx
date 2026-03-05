@@ -5,7 +5,9 @@ const lessons = [
     { id: 1, name: "useState", path: "/hooks/use-state" },
     { id: 2, name: "useEffect", path: "/hooks/use-effect" },
     { id: 3, name: "useRef", path: "/hooks/use-ref" },
-    { id: 4, name: "Custom Hooks", path: "/hooks/custom-hooks" },
+    { id: 4, name: "useContext", path: "/hooks/use-context" },
+    { id: 5, name: "useMemo / useCallback", path: "/hooks/use-memo-callback" },
+    { id: 6, name: "Custom Hooks", path: "/hooks/custom-hooks" },
 ];
 
 export const SubNav = () => {

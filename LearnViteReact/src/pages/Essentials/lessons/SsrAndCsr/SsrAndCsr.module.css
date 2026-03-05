@@ -1,0 +1,207 @@
+.lesson {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.lessonHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lessonHeader h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.subtitle {
+    margin: 0;
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.section h3 {
+    margin: 0;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #374151;
+}
+
+.section p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #374151;
+    line-height: 1.6;
+}
+
+.realLife {
+    border-left: 3px solid #6b7280;
+    padding-left: 0.75rem;
+    font-style: italic;
+    font-size: 0.78rem;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.demoBox {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.codeBlock {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+.codeBlock pre {
+    margin: 0;
+}
+
+.codeBlock code {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.exerciseBox {
+    border: 1px dashed #9ca3af;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #fefce8;
+}
+
+.exerciseBox p {
+    margin: 0 0 0.5rem;
+    font-size: 0.8rem;
+    color: #374151;
+}
+
+.exerciseBox ul {
+    margin: 0;
+    padding: 0 0 0 1.25rem;
+    font-size: 0.78rem;
+    color: #374151;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.toggleGroup {
+    display: flex;
+    gap: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    overflow: hidden;
+    align-self: flex-start;
+}
+
+.toggleBtn {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    border-right: 1px solid #e5e7eb;
+}
+
+.toggleBtn:last-child {
+    border-right: none;
+}
+
+.toggleBtnActive {
+    background-color: #1f2937;
+    color: #e5e7eb;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+}
+
+.timelineStep {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    color: #374151;
+}
+
+.timelineDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.timelineDotBlank {
+    background-color: #ef4444;
+}
+
+.timelineDotLoading {
+    background-color: #f59e0b;
+}
+
+.timelineDotReady {
+    background-color: #10b981;
+}
+
+.timelineDotHtml {
+    background-color: #3b82f6;
+}
+
+.comparisonGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+}
+
+.comparisonCard {
+    padding: 0.75rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.comparisonCardCsr {
+    background-color: #fef3c7;
+    border: 1px solid #fbbf24;
+}
+
+.comparisonCardSsr {
+    background-color: #dbeafe;
+    border: 1px solid #60a5fa;
+}
+
+.comparisonLabel {
+    font-weight: 700;
+    font-size: 0.78rem;
+    margin: 0;
+}
+
+.comparisonDetail {
+    margin: 0;
+    font-size: 0.7rem;
+    color: #6b7280;
+}

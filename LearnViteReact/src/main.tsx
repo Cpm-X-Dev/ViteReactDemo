@@ -10,10 +10,15 @@ import ComponentsAndJsx from "./pages/Essentials/lessons/ComponentsAndJsx";
 import PropsAndTypes from "./pages/Essentials/lessons/PropsAndTypes";
 import ConditionalRendering from "./pages/Essentials/lessons/ConditionalRendering";
 import ListsAndKeys from "./pages/Essentials/lessons/ListsAndKeys";
+import SsrAndCsr from "./pages/Essentials/lessons/SsrAndCsr";
+import WhyReact from "./pages/Essentials/lessons/WhyReact";
+import WhyTypescript from "./pages/Essentials/lessons/WhyTypescript";
 import Hooks from "./pages/Hooks";
 import UseState from "./pages/Hooks/lessons/UseState";
 import UseEffect from "./pages/Hooks/lessons/UseEffect";
 import UseRef from "./pages/Hooks/lessons/UseRef";
+import UseContext from "./pages/Hooks/lessons/UseContext";
+import UseMemoCallback from "./pages/Hooks/lessons/UseMemoCallback";
 import CustomHooks from "./pages/Hooks/lessons/CustomHooks";
 import RouterLayout from "./pages/Router";
 import DeclarativeRouting from "./pages/Router/lessons/DeclarativeRouting";
@@ -39,6 +44,9 @@ createRoot(document.getElementById("root")!).render(
                         <Route path="props-types" element={<PropsAndTypes />} />
                         <Route path="conditional-rendering" element={<ConditionalRendering />} />
                         <Route path="lists-keys" element={<ListsAndKeys />} />
+                        <Route path="ssr-and-csr" element={<SsrAndCsr />} />
+                        <Route path="why-react" element={<WhyReact />} />
+                        <Route path="why-typescript" element={<WhyTypescript />} />
                     </Route>
 
                     <Route path="hooks" element={<Hooks />}>
@@ -46,6 +54,8 @@ createRoot(document.getElementById("root")!).render(
                         <Route path="use-state" element={<UseState />} />
                         <Route path="use-effect" element={<UseEffect />} />
                         <Route path="use-ref" element={<UseRef />} />
+                        <Route path="use-context" element={<UseContext />} />
+                        <Route path="use-memo-callback" element={<UseMemoCallback />} />
                         <Route path="custom-hooks" element={<CustomHooks />} />
                     </Route>
 

@@ -6,6 +6,9 @@ const lessons = [
     { id: 2, name: "Props & Types", path: "/essentials/props-types" },
     { id: 3, name: "Conditional Rendering", path: "/essentials/conditional-rendering" },
     { id: 4, name: "Lists & Keys", path: "/essentials/lists-keys" },
+    { id: 5, name: "SSR & CSR", path: "/essentials/ssr-and-csr" },
+    { id: 6, name: "Why React", path: "/essentials/why-react" },
+    { id: 7, name: "Why TypeScript", path: "/essentials/why-typescript" },
 ];
 
 export const SubNav = () => {

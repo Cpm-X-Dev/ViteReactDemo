@@ -1,0 +1,182 @@
+.lesson {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.lessonHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lessonHeader h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.subtitle {
+    margin: 0;
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.section h3 {
+    margin: 0;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #374151;
+}
+
+.section p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #374151;
+    line-height: 1.6;
+}
+
+.realLife {
+    border-left: 3px solid #6b7280;
+    padding-left: 0.75rem;
+    font-style: italic;
+    font-size: 0.78rem;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.demoBox {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.codeBlock {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+.codeBlock pre {
+    margin: 0;
+}
+
+.codeBlock code {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.exerciseBox {
+    border: 1px dashed #9ca3af;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #fefce8;
+}
+
+.exerciseBox p {
+    margin: 0 0 0.5rem;
+    font-size: 0.8rem;
+    color: #374151;
+}
+
+.exerciseBox ul {
+    margin: 0;
+    padding: 0 0 0 1.25rem;
+    font-size: 0.78rem;
+    color: #374151;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.demoSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.demoSection:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.demoLabel {
+    margin: 0;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #6b7280;
+}
+
+.comparisonSplit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+}
+
+.codePanel {
+    border-radius: 6px;
+    padding: 0.75rem;
+    font-size: 0.72rem;
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.5;
+    overflow-x: auto;
+}
+
+.codePanelJsx {
+    background-color: #fef3c7;
+    border: 1px solid #fbbf24;
+    color: #92400e;
+}
+
+.codePanelTsx {
+    background-color: #dbeafe;
+    border: 1px solid #60a5fa;
+    color: #1e40af;
+}
+
+.errorLine {
+    color: #dc2626;
+    font-weight: 700;
+}
+
+.successLine {
+    color: #059669;
+    font-weight: 700;
+}
+
+.benefitGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.benefitCard {
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    font-size: 0.75rem;
+    color: #166534;
+}
+
+.benefitCard strong {
+    display: block;
+    margin-bottom: 0.125rem;
+    font-size: 0.72rem;
+}
