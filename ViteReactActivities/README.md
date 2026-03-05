@@ -1,73 +1,154 @@
-# React + TypeScript + Vite
+# ✏️ ViteReactActivities
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Hands-on coding exercises with **scaffolded code** and **answer keys** — built with Vite + React + TypeScript.
 
-Currently, two official plugins are available:
+Complete-the-code activities designed to practice React concepts. Each exercise gives you a skeleton component with `TODO` comments — fill in the missing logic, then check your work against the reference solutions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📑 Table of Contents
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+- [🎯 How It Works](#-how-it-works)
+- [📘 Basics (4 activities)](#-basics--4-activities)
+- [🪝 React Hooks (6 activities)](#-react-hooks--6-activities)
+- [📝 Forms (3 activities)](#-forms--3-activities)
+- [🚀 Getting Started](#-getting-started)
+- [📁 Project Structure](#-project-structure)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🎯 How It Works
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. Open `src/App.tsx`
+2. Uncomment the import for the activity you want to work on
+3. Complete the `TODO` items in the activity file
+4. Check your solution against the `_answers/` folder
+5. Each activity has a `HINT.md` file if you get stuck
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+> 💡 **No router** is used in this project — you work on one activity at a time by toggling imports in `App.tsx`.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 📘 Basics — 4 activities
+
+Fundamental React patterns — components, props, conditionals, and lists.
+
+| # | Activity | File | What You'll Practice |
+|---|----------|------|---------------------|
+| 1 | **Hello Component** | `basics/1-hello-component/HelloComponent.tsx` | Creating your first React component |
+| 2 | **Props & Types** | `basics/2-props-and-types/ProfileCard.tsx` | Typed props with TypeScript interfaces |
+| 3 | **Conditional Rendering** | `basics/3-conditional-rendering/StatusBadge.tsx` | Rendering different UI based on state |
+| 4 | **List Rendering** | `basics/4-list-rendering/FruitList.tsx` | `.map()` with keys to render a list |
+
+---
+
+## 🪝 React Hooks — 6 activities
+
+Working with React's built-in hooks and creating custom ones.
+
+| # | Activity | File | What You'll Practice |
+|---|----------|------|---------------------|
+| 1 | **useState Counter** | `react-hooks/1-usestate-counter/Counter.tsx` | Basic number state with increment/decrement |
+| 2 | **useState Toggle** | `react-hooks/2-usestate-toggle/ThemeToggle.tsx` | Boolean state for toggling themes |
+| 3 | **useState Object** | `react-hooks/3-usestate-object/UserProfile.tsx` | Managing object state immutably |
+| 4 | **useEffect Timer** | `react-hooks/4-useeffect-timer/Timer.tsx` | Side effects with cleanup (interval) |
+| 5 | **useEffect Fetch** | `react-hooks/5-useeffect-fetch/UserFetcher.tsx` | Data fetching on mount |
+| 6 | **Custom Hook** | `react-hooks/6-custom-hook/useLocalStorage.ts` | Building a reusable `useLocalStorage` hook |
+
+---
+
+## 📝 Forms — 3 activities
+
+Form handling patterns in React.
+
+| # | Activity | File | What You'll Practice |
+|---|----------|------|---------------------|
+| 1 | **Controlled Input** | `forms/1-controlled-input/NameForm.tsx` | `value` + `onChange` controlled pattern |
+| 2 | **Multi-Field Form** | `forms/2-multi-field-form/RegistrationForm.tsx` | Single state object for multiple fields |
+| 3 | **Form Validation** | `forms/3-form-validation/LoginForm.tsx` | Client-side validation with error display |
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Start the dev server (port 3001)
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Then open **http://localhost:3001** in your browser.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Available Scripts
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start dev server with hot reload |
+| `npm run build` | Type-check + lint + build for production |
+| `npm run lint` | Run ESLint |
+| `npm run preview` | Preview production build |
+| `npm run enroll` | Install + build (one-step setup) |
+
+---
+
+## 📁 Project Structure
+
 ```
+src/
+├── App.tsx                          # Toggle activities by uncommenting imports
+├── activities/
+│   ├── basics/
+│   │   ├── 1-hello-component/
+│   │   │   └── HelloComponent.tsx   # 👈 Complete the TODO
+│   │   ├── 2-props-and-types/
+│   │   │   └── ProfileCard.tsx
+│   │   ├── 3-conditional-rendering/
+│   │   │   └── StatusBadge.tsx
+│   │   ├── 4-list-rendering/
+│   │   │   └── FruitList.tsx
+│   │   └── _answers/               # ✅ Reference solutions
+│   │
+│   ├── react-hooks/
+│   │   ├── 1-usestate-counter/
+│   │   │   └── Counter.tsx
+│   │   ├── 2-usestate-toggle/
+│   │   │   └── ThemeToggle.tsx
+│   │   ├── 3-usestate-object/
+│   │   │   └── UserProfile.tsx
+│   │   ├── 4-useeffect-timer/
+│   │   │   └── Timer.tsx
+│   │   ├── 5-useeffect-fetch/
+│   │   │   └── UserFetcher.tsx
+│   │   ├── 6-custom-hook/
+│   │   │   ├── LocalStorageDemo.tsx
+│   │   │   └── useLocalStorage.ts
+│   │   └── _answers/               # ✅ Reference solutions
+│   │
+│   └── forms/
+│       ├── 1-controlled-input/
+│       │   └── NameForm.tsx
+│       ├── 2-multi-field-form/
+│       │   └── RegistrationForm.tsx
+│       ├── 3-form-validation/
+│       │   └── LoginForm.tsx
+│       └── _answers/               # ✅ Reference solutions
+```
+
+---
+
+## 🔑 Checking Your Answers
+
+Each category has an `_answers/` folder containing the completed reference solutions. Compare your implementation with the answer key:
+
+```
+src/activities/basics/_answers/HelloComponent.tsx       ← Reference
+src/activities/basics/1-hello-component/HelloComponent.tsx  ← Your work
+```
+
+> ⚠️ **Try to solve the exercise yourself first!** The answer keys are there for when you're stuck or want to verify your approach.
+
+---
+
+> ✏️ Part of the [ViteReactDemo](../) workshop repository
