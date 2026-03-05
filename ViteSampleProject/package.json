@@ -4,6 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "enroll": "npm install && npm run build",
+    "clean": "rm -rf dist node_modules",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
