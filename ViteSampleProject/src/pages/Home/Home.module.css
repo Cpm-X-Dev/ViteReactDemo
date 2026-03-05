@@ -1,8 +1,6 @@
 .home {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
-    margin: auto;
 }
 
 .title {
@@ -13,16 +11,4 @@
 .introduction {
     font-size: 0.8rem;
     font-weight: 300;
-}
-
-@media (min-width: 768px) {
-    .home {
-        width: 60%;
-    }
-}
-
-@media (min-width: 1024px) {
-    .home {
-        width: 30%;
-    }
 }

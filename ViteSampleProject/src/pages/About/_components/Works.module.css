@@ -1,0 +1,44 @@
+.workSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-top: 1px solid #7e7e80;
+    border-bottom: 1px solid #7e7e80;
+}
+
+.workList {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.workItem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.workHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+}
+
+.companyName {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.position {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+.description {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.5;
+}

@@ -1,8 +1,6 @@
 .about {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
-    margin: auto;
 }
 
 .title {
@@ -13,16 +11,4 @@
 .description {
     font-size: 0.8rem;
     font-weight: 300;
-}
-
-@media (min-width: 768px) {
-    .about {
-        width: 60%;
-    }
-}
-
-@media (min-width: 1024px) {
-    .about {
-        width: 30%;
-    }
 }
