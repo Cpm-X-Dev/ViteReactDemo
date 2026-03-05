@@ -1,0 +1,53 @@
+.nav {
+  padding: 2rem 1.5rem 1rem;
+  margin: auto;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #6b7280;
+  text-decoration: underline;
+  text-decoration-color: #9ca3af;
+  text-underline-offset: 2px;
+  cursor: pointer;
+  transition: color 150ms ease, text-decoration-color 150ms ease;
+}
+
+.navItem:hover {
+  color: #1f2937;
+  text-decoration-color: #1f2937;
+}
+
+.navItem + .navItem::before {
+  content: "·";
+  color: #9ca3af;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 0.125rem;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav {
+    width: 30%;
+  }
+}
