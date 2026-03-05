@@ -1,19 +1,23 @@
 type TNavLink = {
     id: number;
     name: string;
+    path: string;
 }[]
 
 export const navLinks: TNavLink = [
     {
         id: 1,
-        name: "Home"
+        name: "Home",
+        path: "/"
     },
     {
         id: 2,
-        name: "About"
+        name: "About",
+        path: "/about"
     },
     {
         id: 3,
-        name: "Contact"
+        name: "Contact",
+        path: "/contact"
     }
 ]

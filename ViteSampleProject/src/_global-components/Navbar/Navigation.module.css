@@ -16,6 +16,9 @@
   display: flex;
   align-items: center;
   gap: 0.25rem;
+}
+
+.navLink {
   font-weight: 700;
   font-size: 0.95rem;
   color: #6b7280;
@@ -26,7 +29,12 @@
   transition: color 150ms ease, text-decoration-color 150ms ease;
 }
 
-.navItem:hover {
+.navLink:hover {
+  color: #1f2937;
+  text-decoration-color: #1f2937;
+}
+
+.navLinkActive {
   color: #1f2937;
   text-decoration-color: #1f2937;
 }

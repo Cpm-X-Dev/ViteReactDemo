@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import { navLinks } from "./navLinks";
 import styles from "./Navigation.module.css";
 
@@ -8,7 +9,16 @@ export const Navigation = () => {
 				{navLinks.map((link) => {
 					return (
 						<li key={link.id} className={styles.navItem}>
-							{link.name}
+							<NavLink
+								to={link.path}
+								className={({ isActive }) =>
+									isActive
+										? `${styles.navLink} ${styles.navLinkActive}`
+										: styles.navLink
+								}
+							>
+								{link.name}
+							</NavLink>
 						</li>
 					);
 				})}
